@@ -7,6 +7,14 @@ Compliments Results
 {% block content %}
 
 <!-- Your HTML code goes here! -->
+<p>Hello, {{ users_name }}!</p>
+{% if num_compliments != 0 %}
+<ul>
+    {% for compliment in compliments %}
+        <li>{{ compliment }}</li>
+    {% endfor %}
+</ul>
+{% endif %}
 
 
 
